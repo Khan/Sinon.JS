@@ -1,2 +1,5 @@
 pkg
+tmp/
 node_modules
+coverage/
+.idea

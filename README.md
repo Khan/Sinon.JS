@@ -1,28 +1,28 @@
-# Sinon.JS
+# Sinon.JS [![npm version](https://img.shields.io/npm/v/sinon.svg?style=flat)](https://www.npmjs.com/package/sinon) [![Join the chat at https://gitter.im/sinonjs/sinon](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sinonjs/sinon?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build status](https://secure.travis-ci.org/sinonjs/sinon.svg?branch=master)](http://travis-ci.org/sinonjs/sinon) [![bitHound Score](https://www.bithound.io/github/sinonjs/sinon/badges/score.svg)](https://www.bithound.io/github/sinonjs/sinon) [![Sauce Test Status](https://saucelabs.com/buildstatus/sinonjs)](https://saucelabs.com/u/sinonjs)
 
-[![Build status](https://secure.travis-ci.org/cjohansen/Sinon.JS.svg?branch=master)](http://travis-ci.org/cjohansen/Sinon.JS)
+Standalone and test framework agnostic JavaScript test spies, stubs and mocks (pronounced "sigh-non").
 
-Standalone and test framework agnostic JavaScript test spies, stubs and mocks.
+[![Sauce Test Status](https://saucelabs.com/browser-matrix/sinonjs.svg)](https://saucelabs.com/u/sinonjs)
 
 ## Installation
 
-via [npm (node package manager)](http://github.com/isaacs/npm)
+via [npm (node package manager)](https://github.com/npm/npm)
 
     $ npm install sinon
 
-via [NuGet (package manager for Microsoft development platform)](https://www.nuget.org/packages/SinonJS)
-
-    Install-Package SinonJS
-
-or install via git by cloning the repository and including sinon.js
-in your project, as you would any other third party library.
-
-Don't forget to include the parts of Sinon.JS that you want to use as well
-(i.e. spy.js).
+or via sinon's browser builds available for download on the [homepage](http://sinonjs.org/download/).
 
 ## Usage
 
-See the [sinon project homepage](http://sinonjs.org/)
+See the [sinon project homepage](http://sinonjs.org/) for documentation on usage.
+
+If you have questions that are not covered by the documentation, please post them to the [Sinon.JS mailing list](http://groups.google.com/group/sinonjs) or drop by <a href="irc://irc.freenode.net:6667/sinon.js">#sinon.js on irc.freenode.net:6667</a> or the [Gitter channel](https://gitter.im/sinonjs/sinon).
+
+### Important: Sinon v1.x does not work with AMD/CommonJS Bundlers!
+
+Sinon.JS v1.x *as source* **doesn't work with AMD loaders / RequireJS / Webpack / Browserify**. For that you will have to use a pre-built version. You can either [build it yourself](CONTRIBUTING.md#testing-a-built-version) or get a numbered version from http://sinonjs.org.
+
+This has been resolved in Sinon v2.x; Please don't report this as a bug.
 
 ## Goals
 
@@ -35,46 +35,4 @@ See the [sinon project homepage](http://sinonjs.org/)
 
 ## Contribute?
 
-Pick [an issue](http://github.com/cjohansen/Sinon.JS/issues) to fix, or pitch
-new features. To avoid wasting your time, please ask for feedback on feature
-suggestions either with [an issue](http://github.com/cjohansen/Sinon.JS/issues/new)
-or on [the mailing list](http://groups.google.com/group/sinonjs).
-
-## Run the tests
-
-The Sinon.JS developer environment requires Node/NPM. Please make sure you have
-Node installed, and install Sinon's dependencies:
-
-    $ npm install
-
-### On Node
-
-    $ npm test
-
-### In the browser
-
-Open `test/sinon.html` in a browser. To test against a built distribution, first
-make sure you have a build (requires [Ruby][ruby] and [Juicer][juicer]):
-
-    $ ./build
-
-[ruby]: https://www.ruby-lang.org/en/
-[juicer]: http://rubygems.org/gems/juicer
-
-Then open `test/sinon-dist.html` in a browser.
-
-If the build script is unable to find Juicer, try
-
-    $ ruby -rubygems build
-
-Some tests needs working XHR to pass. To run the tests over an HTTP server, run
-
-    $ node_modules/http-server/bin/http-server
-
-Then open [localhost:8080/test/sinon.html](http://localhost:8080/test/sinon.html)
-in a browser.
-
-### On Rhino
-
-The Rhino tests are currently out of commission (pending update after switch to
-Buster.JS for tests).
+See [CONTRIBUTING.md](CONTRIBUTING.md) for details on how you can contribute to Sinon.JS
